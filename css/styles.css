@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  text-align: center;
+  box-sizing: border-box;
 }
 
 /*Typography*/
@@ -16,6 +16,8 @@ html {
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 
 body {
@@ -176,7 +178,7 @@ a {
   font-size: 1.8rem;
   padding: 2rem 3rem;
   margin: 1rem 0;
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   border-width: 0;
   text-transform: uppercase;
   font-weight: 600;
@@ -199,8 +201,6 @@ a {
 .btn--block {
   width: 100%;
   display: inline-block;
-
-  box-sizing: border-box;
 }
 
 .btn--secondary {
@@ -219,6 +219,45 @@ a {
 
 @media screen and (min-width: 1024px) {
   .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* input-text */
+
+.input-text {
+  border: 0;
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+  min-width: 0;
+  padding-left: 2rem;
+}
+
+::placeholder {
+  color: var(--border-color);
+}
+
+.input-group .btn {
+  margin: 0;
+}
+
+.input-group {
+  border: 0;
+  display: flex;
+  width: 90%;
+  max-width: 72rem;
+  border-radius: var(--border-radius);
+
+  box-shadow: 0 0 10px var(--border-color);
+}
+.input-group .input-text {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .input-text {
     font-size: 1.5rem;
   }
 }
