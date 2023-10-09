@@ -77,6 +77,8 @@ a {
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
 }
 .link-arrow::after {
   content: "-->";
@@ -760,5 +762,28 @@ a {
 @media screen and (min-width: 1024px) {
   .block-plans .grid {
     gap: 4rem;
+  }
+}
+
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem auto;
+  align-items: center;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+.features__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
 }
