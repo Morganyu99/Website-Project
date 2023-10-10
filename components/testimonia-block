@@ -1,0 +1,44 @@
+<section class="block">
+  <header class="block__header">
+    <h2>What our customers are saying</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+      adipisci.
+    </p>
+  </header>
+  <div class="container">
+    <div class="card card__testimonial">
+      <div class="grid grid--1x2 testimonial">
+        <div class="testimonial__image">
+          <img src="./images/testimonial.jpg" alt="A happy customer smiling!" />
+          <span class="icon-container icon--accent--background">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="./images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            fugit et sequi quod non ullam, provident voluptatem magni
+            praesentium ipsa nam ex id dolores aut itaque neque maxime quo
+            similique!
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="./images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Henry</h3>
+                <p class="quote__organization">Fredbear's ltd.</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
