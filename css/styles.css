@@ -44,7 +44,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 4rem;
@@ -207,7 +207,7 @@ a {
 .btn {
   outline: 0;
   font-size: 1.8rem;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   margin: 1rem 0;
   border-radius: var(--border-radius);
   border-width: 0;
@@ -263,6 +263,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -308,14 +309,14 @@ a {
 /* Card */
 
 .card {
-  box-shadow: 0 0 20px 10px var(--border-color);
+  box-shadow: 0 0 20px 10px #f3f3f3;
   border-radius: 7px;
   overflow: hidden;
 }
 
 .card__header,
 .card__body {
-  padding: 2rem 2.3rem;
+  padding: 2rem 7%;
 }
 
 .card--primary .card__header {
@@ -336,16 +337,16 @@ a {
 .plan__name {
   color: white;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2.4rem;
 }
 
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .plan__billing-cycle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   opacity: 0.8;
   margin-right: 1rem;
@@ -371,7 +372,7 @@ a {
 }
 
 .plan .card {
-  width: 90%;
+  width: 95%;
   max-width: 50rem;
 }
 
@@ -426,6 +427,9 @@ a {
 
 .media__image {
   margin-top: 1rem;
+}
+.media__content {
+  font-size: 2rem;
 }
 /* Quotes */
 
@@ -542,6 +546,9 @@ a {
   font-size: 3rem;
   text-transform: capitalize;
 }
+.callout__content p {
+  font-size: 2rem;
+}
 
 .callout .btn {
   align-self: center;
@@ -549,6 +556,10 @@ a {
 }
 .callout__content {
   text-align: center;
+}
+
+.callout__signup {
+  transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
@@ -629,11 +640,11 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 /* Navigation Bar */
@@ -723,7 +734,7 @@ a {
     align-self: center;
   }
   .hero {
-    padding-top: 0;
+    padding-top: 5rem;
   }
 }
 
@@ -735,13 +746,14 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 768px) {
@@ -864,6 +876,7 @@ a {
   }
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    padding-top: 3rem;
   }
   .footer .collapsible__chevron {
     display: none;
