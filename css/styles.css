@@ -1,3 +1,5 @@
+@import './normalize.css';
+
 *,
 *::before,
 *::after {
@@ -457,7 +459,7 @@ a {
 .quote__organization {
   font-size: 2rem;
   font-style: normal;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .quote .media {
